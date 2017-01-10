@@ -1,0 +1,45 @@
+/*#homeCarousel img {
+	height: 100%;
+	width: 100%;
+}*/
+
+/*#homeCarousel img:hover {
+	width: 150vh;
+}*/
+
+body {	
+	background-color: black;
+}
+
+ 
+img {
+	width: 100%;
+} 
+
+#homeCarousel {
+  position:absolute;
+  top:0;  
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-control.left, .carousel-control.right{
+    opacity: 1;
+    background-image: none;
+} 
+
+.full-screen {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#navbar {
+  position: absolute;
+  left: 0;
+}
+
+#signature {
+  position: absolute;
+  right: 0;
+}

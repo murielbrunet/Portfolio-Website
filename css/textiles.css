@@ -1,0 +1,28 @@
+/*body {
+	background-image: url("../images/home/Woven Mat - home.jpeg");
+    background-size: 100%;
+    background-attachment: fixed;
+}*/
+
+#textilesBackground{
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+
+    /* Preserve aspet ratio */
+    min-width: 100%;
+    min-height: 100%;
+}
+
+#description {
+    background-color: white;
+    opacity: 0.9;
+    font-size: 1.25em;
+    padding: 50px;
+    text-align: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    margin-top: 0px;
+}

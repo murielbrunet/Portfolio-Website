@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>muriel brunet</title>
+<!--   <link href="Photos/1890s/Icon.png" rel="shortcut icon" type="image/png"> -->
+  <link href="images/window.png" rel="shortcut icon" type="image/png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/programming.css">
+  <link rel="stylesheet" type="text/css" href="css/thumbailPages.css">  
+  <link rel="stylesheet" type="text/css" href="css/navbarAndTitle.css">  
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+
+<body>
+  <img src="images/home/Ivory Queen - home.png" alt="programming background" id="programmingBackground"
+  <div class="container-fluid" id="fullContent">
+    <div class="row">
+      <div class="col-xs-2" id="navbarDiv"> <!-- navbar -->
+        <div id="navbar">
+          <ul>
+            <li><a href="portfolioDesign.html">Design</a></li>
+            <li><a href="portfolioTextiles.html">Textiles</a></li>
+            <li><a href="portfolioProgramming.html" style="border-bottom: 2px solid black; width: 100%;">Programming</a></li>
+            <li><a href="portfolioMedia.html">Multi Media</a></li>            
+            <li><a href="portfolioAbout.html">About</a></li>
+            <li><a href="portfolioContact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-10"> <!-- content -->
+        <div class="row" style="height: 200px">
+          <a href="index.html"><img src="images/signature.png" id="signature"></a>
+        </div>
+        <div class="row">
+          <div class="col-xs-4">
+            <img src="images/programming/glass queens.png" alt="Glass chess pieces made in Blender<br><i>Computer Graphics - Fall 2016</i>" class="work" id="img01" onclick="openModal('img01')">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- The Close Button -->
+              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+              <span class="previous" onclick="previous()">&larr;</span> 
+
+              <span class="next" onclick="next()">&rarr;</span> 
+
+              <!-- Modal Content (The Image) -->
+              <img class="modal-content" id="modalContent">
+              
+              <!-- Modal Caption (Image Text) -->
+              <div id="caption"></div>
+            </div>
+
+            <img src="images/programming/hw2 screenshot.png" alt="Exploring paint fill algorithms<br><i>Computer Graphics - Fall 2016</i>" class="work" id="img04" onclick="openModal('img04')">
+          </div>
+          <div class="col-xs-4">
+            <img src="images/programming/hw 7 screenshot.png" alt="Interactive solar system with point lights and hierarchical modeling<br><i>Computer Graphics - Fall 2016</i>" class="work" id="img02" onclick="openModal('img02')">
+            <img src="images/programming/hw9_chess.png" alt="Modeling queen chess piece in blender with UV texture mapping<br><i>Computer Graphics - Fall 2016</i>" class="work" id="img05" onclick="openModal('img05')">
+          </div>
+          <div class="col-xs-4">
+            <img src="images/programming/hw6 screenshot.png" alt="Creating 3D scenes using THREE js<br><i>Computer Graphics - Fall 2016</i>" class="work" id="img03" onclick="openModal('img03')">
+           <img src="images/programming/hw5 screenshot.png" alt="Understanding and experimenting with Bezier curves<br><i>Computer Graphics - Fall 2016</i>" class="work" id="img06" onclick="openModal('img06')">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="js/programming.js"></script>
+</body>
+</html>
+
+
+

@@ -1,0 +1,16 @@
+/*body {
+	background-image: url("../images/home/Mushroom Book - home.jpeg");
+    background-size: 100%;
+    background-attachment: fixed;
+}
+*/
+
+#mediaBackground {
+	position: fixed; 
+	bottom: 0; 
+	right: 0; 
+
+	/* Preserve aspet ratio */
+	min-width: 100%;
+	min-height: 100%;
+}
