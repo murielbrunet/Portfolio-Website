@@ -1,5 +1,16 @@
 var currentImage;
 var captionText;
+var captions = {
+	"img01" : "Glass chess pieces made in Blender<br><i>Computer Graphics - Fall 2016</i>",
+	"img02" : "Interactive solar system with point lights and hierarchical modeling<br><i>Computer Graphics - Fall 2016</i>",
+	"img03" : "Creating 3D scenes using THREE js<br><i>Computer Graphics - Fall 2016</i>",
+	"img04" : "Exploring paint fill algorithms<br><i>Computer Graphics - Fall 2016</i>",
+	"img05" : "Modeling queen chess piece in blender with UV texture mapping<br><i>Computer Graphics - Fall 2016</i>",
+	"img06" : "Understanding and experimenting with Bezier curves<br><i>Computer Graphics - Fall 2016</i>"
+};
+
+
+
 
 function openModal(imgID){
 	currentImage = imgID; //define the current image as the one that was clicked to open modal window
@@ -15,7 +26,7 @@ function openModal(imgID){
 	img.onclick = function(){
 	    modal.style.display = "block";
 	    modalImg.src = this.src;
-	    captionText.innerHTML = this.alt;
+	    captionText.innerHTML = captions[imgID];
 	}
 
 	// Get the <span> element that closes the modal
@@ -56,11 +67,14 @@ function update(imgID){
 	var modal = document.getElementById('myModal');
 
 	var img = document.getElementById(imgID);
+	// var img = new Image();
+	// img.src = "../images/aboutImage.jpg";
 	var modalImg = document.getElementById("modalContent");
 	
     modal.style.display = "block";
     modalImg.src = img.src;
-    captionText.innerHTML = img.alt;
+    captionText.innerHTML = captions[imgID];
+
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];

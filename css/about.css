@@ -31,7 +31,7 @@ h3 {
 	color: black;
 }
 
-.professionalLinks a:hover {
+.professionalLinks:hover {
 	text-decoration: none;
 	color: black;
 	font-style: italic;
