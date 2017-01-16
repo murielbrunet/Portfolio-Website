@@ -1,15 +1,21 @@
 var currentImage;
 var captionText;
 var captions = {
-	"img01" : "Glass chess pieces made in Blender<br><i>Computer Graphics - Fall 2016</i>",
-	"img02" : "Interactive solar system with point lights and hierarchical modeling<br><i>Computer Graphics - Fall 2016</i>",
-	"img03" : "Creating 3D scenes using THREE js<br><i>Computer Graphics - Fall 2016</i>",
-	"img04" : "Exploring paint fill algorithms<br><i>Computer Graphics - Fall 2016</i>",
-	"img05" : "Modeling queen chess piece in blender with UV texture mapping<br><i>Computer Graphics - Fall 2016</i>",
-	"img06" : "Understanding and experimenting with Bezier curves<br><i>Computer Graphics - Fall 2016</i>"
+	"img01" : "Final Project: Game using hierachical modeling,<br>texture mapping, blender objects, lighting and camera movement.<br><i>Computer Graphics - Fall 2016</i>",
+	"img02" : "Webpages designed and developed for exhibit on boater hats in collaboration with the Historic Costume Collection.<br><i>Human Computation and Visualization Laboratory at Smith College<br>Fall 2016</i>",
+	"img03" : "Understanding and experimenting with Bezier curves<br><i>Computer Graphics - Fall 2016</i>",
+	"img04" : "Modeling queen chess piece in blender with UV texture mapping<br><i>Computer Graphics - Fall 2016</i>",
+	"img05" : "Web design project: Japan Travel with seasonal themes<br><i>Interactive Web Documents - Spring 2015</i>"
+
 };
 
-
+var images = {
+	"img01" : "images/programming/final project.gif",
+	"img02" : "images/programming/boater project.png",
+	"img03" : "images/programming/bezier line curves.gif",
+	"img04" : "images/programming/wooden queen.png",
+	"img05" : "images/programming/japan travel website.png"
+};
 
 
 function openModal(imgID){
@@ -25,7 +31,7 @@ function openModal(imgID){
 	var modalImg = document.getElementById("modalContent");
 	img.onclick = function(){
 	    modal.style.display = "block";
-	    modalImg.src = this.src;
+	    modalImg.src = images[imgID];
 	    captionText.innerHTML = captions[imgID];
 	}
 
@@ -39,7 +45,7 @@ function openModal(imgID){
 }
 
 function previous(){
-	var images = ["img01", "img02", "img03", "img04", "img05", "img06"];
+	var images = ["img01", "img02", "img03", "img04", "img05"];
 	var index = images.indexOf(currentImage);
 	if(index - 1 < 0){
 		index = images.length - 1;
@@ -51,7 +57,7 @@ function previous(){
 }
 
 function next(){
-	var images = ["img01", "img02", "img03", "img04", "img05", "img06"];
+	var images = ["img01", "img02", "img03", "img04", "img05"];
 	var index = images.indexOf(currentImage);
 	if(index + 1 >= images.length){
 		index = 0;
@@ -65,14 +71,10 @@ function next(){
 function update(imgID){
 	// Get the modal
 	var modal = document.getElementById('myModal');
-
-	var img = document.getElementById(imgID);
-	// var img = new Image();
-	// img.src = "../images/aboutImage.jpg";
 	var modalImg = document.getElementById("modalContent");
 	
     modal.style.display = "block";
-    modalImg.src = img.src;
+	modalImg.src = images[imgID];
     captionText.innerHTML = captions[imgID];
 
 

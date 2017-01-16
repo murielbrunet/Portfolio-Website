@@ -1,17 +1,17 @@
 var currentImage;
 var captionText;
 var captions = {
-	"img01" : "Poster design for an imagenary event on campus<br><i>Visual Storytelling - Fall 2016</i>",
-	"img02" : "Installation representing our own experiences at Smith College<br><i>Visual Storytelling - Fall 2016</i>",
-	"img03" : "Mushrooms from the Smith College MacLeish Field Station<br><i>Visual Storytelling - Fall 2016</i>",
-	"img04" : "<br><i>Summer 2014</i>",
+	"img01" : "Mushrooms from the Smith College MacLeish Field Station<br><i>Visual Storytelling - Fall 2016</i>",
+	"img02" : "Poster design for an imaginary event on campus<br><i>Visual Storytelling - Fall 2016</i>",
+	"img03" : "Installation project representing my subjective experience of Smith College<br>as a Computer Science major interested in the arts.<br><i>Visual Storytelling - Fall 2016</i>",
+	"img04" : "<i>Summer 2014</i>",
 	"img05" : "Flowers from the Smith College Botanical Gardens<br><i>Fall 2014</i>"
 };
 
 var images = {
-	"img01" : "images/multi media/CC S'mores Night Final.png",
-	"img02" : "images/multi media/Installation 1.JPG",
-	"img03" : "images/multi media/Mushroom Book.gif",
+	"img01" : "images/multi media/Mushroom Book.gif",
+	"img02" : "images/multi media/CC S'mores Night Final.png",
+	"img03" : "images/multi media/Installation 1.JPG",
 	"img04" : "images/multi media/Imaginary House.jpg",
 	"img05" : "images/multi media/Botanical Garden Flowers.jpg"	
 };

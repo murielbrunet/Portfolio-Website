@@ -35,4 +35,6 @@ h3 {
 	text-decoration: none;
 	color: black;
 	font-style: italic;
+	cursor: pointer; /*to cover all browsers*/
+	cursor: hand;
 }

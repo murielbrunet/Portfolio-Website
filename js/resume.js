@@ -7,7 +7,7 @@ var modalImg = document.getElementById("img01");
 
 resumeLink.onclick = function(){
     modal.style.display = "block";
-    modalImg.src = "../images/resume.jpg";
+    modalImg.src = "images/latestResume.jpg";
 }
 
 // Get the <span> element that closes the modal

@@ -14,3 +14,14 @@
 	min-width: 100%;
 	min-height: 100%;
 }
+
+#description {
+	width: 100%;
+	padding: 5%;
+	margin-bottom: 20px;
+	background-color: white;
+	text-align: justify;
+	vertical-align: middle;
+	opacity: 0.9;
+	font-size: 1.25em;
+}
