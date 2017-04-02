@@ -1,26 +1,12 @@
-body {
-    background-image: url("../images/resumeImage.jpg");
-    background-size: 100%;
-}
 
-/* Style the Image Used to Trigger the Modal */
-#resume {
-	width: 100%;
- 
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-#resume:hover {opacity: 0.9;}
 
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-/*    padding-top: 100px;  Location of the box 
-    padding-bottom: 100px;*/
+    padding-top: 75px;  /*Location of the box*/ 
+    padding-bottom: 75px;
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -34,10 +20,10 @@ body {
 .modal-content {
     margin: auto;
     display: block;
-    height: 80vh; /*viewport percentage*/
-    top: 10vh;
-/*    width: 80%;
-    max-width: 700px;*/
+/*  height: 80vh; viewport percentage
+    top: 10vh; */
+    width: 100%;
+    max-width: 1000px;
 }
 
 /* Add Animation - Zoom in the Modal */

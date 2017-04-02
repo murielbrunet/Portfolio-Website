@@ -1,5 +1,23 @@
 var currentImage;
 var captionText;
+var captions = {
+	"img01" : "Mushrooms from the Smith College MacLeish Field Station<br><i>Visual Storytelling - Fall 2016</i>",
+	"img02" : "Poster design for an imaginary event on campus<br><i>Visual Storytelling - Fall 2016</i>",
+	"img03" : "Installation project representing my subjective experience of Smith College<br>as a Computer Science major interested in the arts.<br><i>Visual Storytelling - Fall 2016</i>",
+	"img04" : "<i>Summer 2014</i>",
+	"img05" : "Flowers from the Smith College Botanical Gardens<br><i>Fall 2014</i>"
+};
+
+var images = {
+	"img01" : "images/multi media/Mushroom Book.gif",
+	"img02" : "images/multi media/CC S'mores Night Final.png",
+	"img03" : "images/multi media/Installation 1.JPG",
+	"img04" : "images/multi media/Imaginary House.jpg",
+	"img05" : "images/multi media/Botanical Garden Flowers.jpg"	
+};
+
+
+
 
 function openModal(imgID){
 	currentImage = imgID; //define the current image as the one that was clicked to open modal window
@@ -8,15 +26,15 @@ function openModal(imgID){
 	var modal = document.getElementById('myModal');
 
 	// Get the image and insert it inside the modal 
-	var img = document.getElementById(imgID);
+	var currentImg = document.getElementById(imgID);
 	captionText = document.getElementById("caption");
 
 	var modalImg = document.getElementById("modalContent");
-	img.onclick = function(){
+	//currentImg.onclick = function(){
 	    modal.style.display = "block";
-	    modalImg.src = this.src;
-	    captionText.innerHTML = this.alt;
-	}
+	    modalImg.src = images[imgID]; //replace thumbnail with large size img
+	    captionText.innerHTML = captions[imgID];
+	//}
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];
@@ -55,12 +73,12 @@ function update(imgID){
 	// Get the modal
 	var modal = document.getElementById('myModal');
 
-	var img = document.getElementById(imgID);
+	// var currentImg = document.getElementById(imgID);
 	var modalImg = document.getElementById("modalContent");
 	
     modal.style.display = "block";
-    modalImg.src = img.src;
-    captionText.innerHTML = img.alt;
+	modalImg.src = images[imgID]; //replace thumbnail with large size img
+	captionText.innerHTML = captions[imgID];
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];

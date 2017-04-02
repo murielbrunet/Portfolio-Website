@@ -35,8 +35,9 @@
 .modal-content {
     margin: auto;
     display: block;
-    top: 10vh;
+    top: 30px;
     max-height: 80vh;
+    max-width: 70vw;
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -56,7 +57,7 @@
     text-align: center;
     padding: 10px 0;
     padding-top: 80px;
-
+    font-size: 1.5em;
 }
 
 /* Add Animation - Zoom in the Modal */
