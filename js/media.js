@@ -30,11 +30,11 @@ function openModal(imgID){
 	captionText = document.getElementById("caption");
 
 	var modalImg = document.getElementById("modalContent");
-	currentImg.onclick = function(){
+	//currentImg.onclick = function(){
 	    modal.style.display = "block";
 	    modalImg.src = images[imgID]; //replace thumbnail with large size img
 	    captionText.innerHTML = captions[imgID];
-	}
+	//}
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];

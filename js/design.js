@@ -24,11 +24,11 @@ function openModal(imgID){
 	captionText = document.getElementById("caption");
 
 	var modalImg = document.getElementById("modalContent");
-	img.onclick = function(){
+//	img.onclick = function(){
 	    modal.style.display = "block";
 	    modalImg.src = images[imgID];
 	    captionText.innerHTML = captions[imgID];
-	}
+//	}
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];

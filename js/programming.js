@@ -2,7 +2,7 @@ var currentImage;
 var captionText;
 var captions = {
 	"img01" : "Final Project: Game using hierachical modeling,<br>texture mapping, blender objects, lighting and camera movement.<br><i>Computer Graphics - Fall 2016</i>",
-	"img02" : "Webpages designed and developed for exhibit on boater hats in collaboration with the Historic Costume Collection.<br><i>Human Computation and Visualization Laboratory at Smith College<br>Fall 2016</i>",
+	"img02" : "Webpages designed and developed for an exhibit on boater hats in collaboration with the Historic Costume Collection.<br><i>Human Computation and Visualization Laboratory at Smith College<br>Fall 2016</i>",
 	"img03" : "Understanding and experimenting with Bezier curves<br><i>Computer Graphics - Fall 2016</i>",
 	"img04" : "Modeling queen chess piece in blender with UV texture mapping<br><i>Computer Graphics - Fall 2016</i>",
 	"img05" : "Web design project: Japan Travel with seasonal themes<br><i>Interactive Web Documents - Spring 2015</i>"
@@ -29,11 +29,11 @@ function openModal(imgID){
 	captionText = document.getElementById("caption");
 
 	var modalImg = document.getElementById("modalContent");
-	img.onclick = function(){
+	//img.onclick = function(){
 	    modal.style.display = "block";
 	    modalImg.src = images[imgID];
 	    captionText.innerHTML = captions[imgID];
-	}
+	//}
 
 	// Get the <span> element that closes the modal
 	var span = document.getElementsByClassName("close")[0];

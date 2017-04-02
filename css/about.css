@@ -3,6 +3,17 @@ body {
     background-size: 100%;
 }
 
+/*#aboutBackground{
+	position: fixed; 
+	bottom: 0; 
+	right: 0; 
+
+	 Preserve aspect ratio 
+	min-width: 100%;
+	min-height: 100%;
+}
+*/
+
 #description {
     background-color: white;
     opacity: 0.9;

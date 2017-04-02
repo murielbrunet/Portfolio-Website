@@ -10,7 +10,7 @@
 	bottom: 0; 
 	right: 0; 
 
-	/* Preserve aspet ratio */
+	/* Preserve aspect ratio */
 	min-width: 100%;
 	min-height: 100%;
 }
@@ -20,7 +20,6 @@
 	padding: 5%;
 	margin-bottom: 20px;
 	background-color: white;
-	text-align: justify;
 	vertical-align: middle;
 	opacity: 0.9;
 	font-size: 1.25em;
