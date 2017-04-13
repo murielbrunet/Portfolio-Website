@@ -4,12 +4,14 @@ var captions = {
 	"img01" : "Submitted design for Computer Science Department at Smith College<br><i>Fall 2016</i>",
 	"img02" : "Winning design for dorm apparel at Smith College - pocket square followed by back design<br><i>Fall 2016</i>",
 	"img03" : "Draft followed by winning design for Smith College's first hackathon<br><i>Fall 2014</i>",
+	"img04" : "Winning design for dorm apparel at Smith College<br><i>Spring 2017</i>"
 };
 
 var images = {
 	"img01" : "images/design/Final CS Design.jpg",
 	"img02" : "images/design/morris house.png",
-	"img03" : "images/design/logos.png"
+	"img03" : "images/design/logos.png",
+	"img04" : "images/design/Final Chase House with Background.png"
 };
 
 
@@ -40,7 +42,7 @@ function openModal(imgID){
 }
 
 function previous(){
-	var images = ["img01", "img02", "img03"];
+	var images = ["img01", "img02", "img03", "img04"];
 	var index = images.indexOf(currentImage);
 	if(index - 1 < 0){
 		index = images.length - 1;
@@ -52,7 +54,7 @@ function previous(){
 }
 
 function next(){
-	var images = ["img01", "img02", "img03"];
+	var images = ["img01", "img02", "img03", "img04"];
 	var index = images.indexOf(currentImage);
 	if(index + 1 >= images.length){
 		index = 0;
